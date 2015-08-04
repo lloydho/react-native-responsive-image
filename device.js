@@ -4,17 +4,17 @@ var scale = 1;
 
 //iPhone4
 if (device.width === 320 && device.height == 480) {
-    scale = 0.77;
+    scale = 0.765;
 }
 
 //iPhone5
 if (device.width === 320 && device.height == 568) {
-    scale = 0.77;
+    scale = 0.765;
 }
 
 //iPhone6
 if (device.width === 375 && device.height == 667) {
-    scale = 0.85;
+    scale = 0.902;
 }
 
 //iPhone6plus
