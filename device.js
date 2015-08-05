@@ -1,4 +1,4 @@
-var device = require('Dimensions').get('window');
+var device = require('react-native').Dimensions.get('window');
 
 var scale = 1;
 
