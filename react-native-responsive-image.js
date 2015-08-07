@@ -13,14 +13,10 @@ var ResponsiveImage = React.createClass({
         return (
             <Image style={[{width: this.width, height: this.height}, this.props.style]} source={this.props.source}/>
         );
-    },
-
-    getWidth : function() {
-      return this.width;
-    },
-    getHeight : function() {
-      return this.height;
     }
 });
 
-module.exports = ResponsiveImage;
+module.exports = {
+    ResponsiveImage,
+    Device
+}
