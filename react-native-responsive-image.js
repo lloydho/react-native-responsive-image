@@ -8,11 +8,18 @@ var {
 
 var ResponsiveImage = React.createClass({
     render: function () {
-        var width = Math.ceil(this.props.initWidth * Device.scale);
-        var height = Math.ceil(this.props.initHeight * Device.scale);
+        this.width = Math.ceil(this.props.initWidth * Device.scale);
+        this.height = Math.ceil(this.props.initHeight * Device.scale);
         return (
-            <Image style={[{width: width, height: height}, this.props.style]} source={this.props.source}/>
+            <Image style={[{width: this.width, height: this.height}, this.props.style]} source={this.props.source}/>
         );
+    },
+
+    getWidth : function() {
+      return this.width;
+    },
+    getHeight : function() {
+      return this.height;
     }
 });
 
