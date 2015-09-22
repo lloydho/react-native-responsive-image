@@ -20,7 +20,7 @@
     "url": "https://github.com/Dharmoslap/react-native-responsive-images/issues"
   },
   "homepage": "https://github.com/Dharmoslap/react-native-responsive-images#readme",
-  "dependencies": {
-    "react-native": "^0.8.0"
+  "peerDependencies": {
+    "react-native": "*"
   }
 }
